@@ -1,0 +1,20 @@
+#mi-botoncito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999;
+    background-color: #7470c2;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 12px;
+    width: 70px;
+    height: 40px; 
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    
+  }
+  #mi-botoncito:hover {
+    background-color: #3730a3;
+  }
+  

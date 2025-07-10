@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cesarwamartinez@gmail.com"
+    }
+  },
+  "name": "Responsive Tailwind",
+  "version": "1.0",
+  "description": "Agrega un botón flotante a todas las páginas",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": []
+}
