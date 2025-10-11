@@ -1,20 +1,105 @@
-#mi-botoncito {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999999;
-    background-color: #7470c2;
-    color: white;
-    border: none;
-    font-size: 14px;
-    border-radius: 12px;
-    width: 70px;
-    height: 40px; 
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    
-  }
-  #mi-botoncito:hover {
-    background-color: #3730a3;
-  }
-  
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.breakpoint-panel {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 200px;
+  height: 40px;
+  background: #111114;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
+  z-index: 999;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.breakpoint-panel:hover {
+  width: 240px;
+  height: 270px;
+}
+
+.breakpoint-panel .header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(90deg, #000000 0%, #1f1f1f 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.breakpoint-panel .header img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(1.2);
+}
+
+.breakpoint-panel .header .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.breakpoint-panel .bp-current {
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+  background: linear-gradient(90deg, #000000 0%, #0d2a2b 100%);
+  color: #c2f5e9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.breakpoint-panel .bp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 14px;
+  overflow-y: auto;
+  max-height: 180px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.breakpoint-panel .bp-list::-webkit-scrollbar {
+  display: none;
+}
+
+.breakpoint-panel .bp-list div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.breakpoint-panel .bp-list div:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.breakpoint-panel .bp-list div.active {
+  opacity: 1;
+  color: #4ade80;
+  background-color: #2c2c2c;
+  font-weight: bold;
+}
+
+.breakpoint-panel .bp-list div img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+  filter: contrast(1.1);
+}
