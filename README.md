@@ -2,23 +2,23 @@
 
 ![Imagen Tailwind Breakpoint 🍕](./image.png)
 
-<div style="display: flex; width: 100%; justify-content: center; gap: 10px; margin-bottom: 20px">
+<div style="display: inline-flex; width: 100%; justify-content: center; gap: 10px; margin-bottom: 20px">
   <div style="width: 50px; height: 50px; ">
-  <a>
-  <img src="./firefox.svg">
+  <a href="https://addons.mozilla.org/es-ES/firefox/addon/tailwind_breack/">
+  <img src="./firefox.svg" width="50" height="50">
   
   </a>
   </div>
   <div style="width: 50px; height: 50px; ">
-  <a>
-  <img src="./chromium.svg">
+  <a href="https://addons.mozilla.org/es-ES/firefox/addon/tailwind_breack/">
+  <img src="./chromium.svg" width="50" height="50">
   
   </a>
   </div>
 
   <div style="width: 50px; height: 50px; ">
-  <a>
-  <img src="./edge.svg">
+  <a href="https://addons.mozilla.org/es-ES/firefox/addon/tailwind_breack/">
+  <img src="./edge.svg" width="50" height="50">
 
   </a>
   </div>
