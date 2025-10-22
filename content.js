@@ -8,7 +8,7 @@ panel.className = "breakpoint-panel";
 panel.innerHTML = `
   <div class="header">
     <img src="${logoURL}" alt="Tailwind Breakpoint Logo" />
-    <span class="title">Tailwind Breakpoints</span>
+    <span class="title">Tail break</span>
   </div>
 
   <div class="bp-current">0px</div>
